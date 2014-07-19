@@ -1,10 +1,12 @@
-"use strict";
+'use strict';
 
-describe("RouteListCtrl", function () {
-    it("it should create a list of 12 routes", function() {
-        var scope = {},
-            ctrl = new RouteListCrtl(scope);
+describe('controllers', function(){
 
-        expect(scope.routes.length).toBe(12);
-    });
+    beforeEach(module('cercaniasApp.controllers'));
+
+    it('should ....', inject(function($controller) {
+        //spec body
+        var ctrl = $controller('RouteListCtrl', { $scope: {} });
+        expect(ctrl).toBeDefined();
+    }));
 });

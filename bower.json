@@ -1,0 +1,11 @@
+{
+    "name": "cercanias-app",
+    "description": "Pet project",
+    "version": "0.0.0",
+    "homepage": "https://github.com/rmhdev/cercanias-app",
+    "license": "MIT",
+    "private": true,
+    "dependencies": {
+        "angular": "1.2.x"
+    }
+}

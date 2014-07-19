@@ -1,0 +1,14 @@
+{
+    "name": "cercanias-app",
+    "description": "Pet project",
+    "version": "0.0.0",
+    "repository": "https://github.com/rmhdev/cercanias-app",
+    "license": "MIT",
+    "private": true,
+    "devDependencies": {
+        "bower": "^1.3.1"
+    },
+    "scripts": {
+        "postinstall": "bower install"
+    }
+}

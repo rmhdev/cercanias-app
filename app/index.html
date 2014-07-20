@@ -9,12 +9,11 @@
 </head>
 <body>
 
-Hello world!
-
-<div ng-controller="RouteListCtrl">
-    {{ routes }}
-</div>
-
+    <div ng-controller="RouteListCtrl">
+        <ul class="routes">
+            <li ng-repeat="route in routes | filter:query">{{ route.name }}</li>
+        </ul>
+    </div>
 
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>

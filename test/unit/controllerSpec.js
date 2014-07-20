@@ -4,14 +4,29 @@
 describe('CercaniasApp controllers', function() {
 
     describe('RouteListCtrl', function(){
+        var scope, ctrl, $httpBackend;
 
         beforeEach(module('cercaniasApp'));
 
-        it('should create "routes" model with 12 phones', inject(function($controller) {
-            var scope = {},
-                ctrl = $controller('RouteListCtrl', {$scope:scope});
+        beforeEach(inject(function(_$httpBackend_, $rootScope, $controller) {
+            $httpBackend = _$httpBackend_;
+            $httpBackend.expectGET('data/routes.json').
+                respond({
+                    "routes": [
+                        {id: 1, name: 'Route A'},
+                        {id: 2, name: 'Route B'},
+                        {id: 3, name: 'Route C'}
+                    ]
+                });
 
-            expect(scope.routes.length).toBe(12);
+            scope = $rootScope.$new();
+            ctrl = $controller('RouteListCtrl', {$scope: scope});
+        }));
+
+        it('should create "routes" model with 3 phones', inject(function() {
+            expect(scope.routes).toBeUndefined();
+            $httpBackend.flush();
+            expect(scope.routes.length).toBe(3);
         }));
 
     });

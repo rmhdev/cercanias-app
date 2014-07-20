@@ -1,0 +1,64 @@
+{
+    "routes": [
+        {
+            "id": 20,
+            "name": "Asturias",
+            "route_url": "http://localhost:8888/route/20"
+        },
+        {
+            "id": 50,
+            "name": "Barcelona",
+            "route_url": "http://localhost:8888/route/50"
+        },
+        {
+            "id": 60,
+            "name": "Bilbao",
+            "route_url": "http://localhost:8888/route/60"
+        },
+        {
+            "id": 31,
+            "name": "Cádiz",
+            "route_url": "http://localhost:8888/route/31"
+        },
+        {
+            "id": 10,
+            "name": "Madrid",
+            "route_url": "http://localhost:8888/route/10"
+        },
+        {
+            "id": 32,
+            "name": "Málaga",
+            "route_url": "http://localhost:8888/route/32"
+        },
+        {
+            "id": 41,
+            "name": "Murcia-Alicante",
+            "route_url": "http://localhost:8888/route/41"
+        },
+        {
+            "id": 61,
+            "name": "San Sebastián",
+            "route_url": "http://localhost:8888/route/61"
+        },
+        {
+            "id": 62,
+            "name": "Santander",
+            "route_url": "http://localhost:8888/route/62"
+        },
+        {
+            "id": 30,
+            "name": "Sevilla",
+            "route_url": "http://localhost:8888/route/30"
+        },
+        {
+            "id": 40,
+            "name": "Valencia",
+            "route_url": "http://localhost:8888/route/40"
+        },
+        {
+            "id": 70,
+            "name": "Zaragoza",
+            "route_url": "http://localhost:8888/route/70"
+        }
+    ]
+}

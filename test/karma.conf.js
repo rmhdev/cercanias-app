@@ -17,7 +17,7 @@ module.exports = function(config) {
         'autoWatch': true,
         'frameworks': ['jasmine'],
         'browsers': ['Chrome'],
-        'reporters': ['dots', 'junit'],
+        'reporters': ['progress', 'junit'],
         'colors': true,
         'plugins': [
             'karma-junit-reporter',

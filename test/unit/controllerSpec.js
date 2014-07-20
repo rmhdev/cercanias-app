@@ -1,12 +1,18 @@
 'use strict';
 
-describe('controllers', function(){
+/* jasmine specs for controllers go here */
+describe('CercaniasApp controllers', function() {
 
-    beforeEach(module('cercaniasApp.controllers'));
+    describe('RouteListCtrl', function(){
 
-    it('should ....', inject(function($controller) {
-        //spec body
-        var ctrl = $controller('RouteListCtrl', { $scope: {} });
-        expect(ctrl).toBeDefined();
-    }));
+        beforeEach(module('cercaniasApp'));
+
+        it('should create "routes" model with 12 phones', inject(function($controller) {
+            var scope = {},
+                ctrl = $controller('RouteListCtrl', {$scope:scope});
+
+            expect(scope.routes.length).toBe(12);
+        }));
+
+    });
 });

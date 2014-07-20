@@ -7,7 +7,7 @@ module.exports = function(config) {
             'app/bower_components/angular/angular.js',
             'app/bower_components/angular-route/angular-route.js',
             'app/bower_components/angular-mocks/angular-mocks.js',
-            'app/js/**/*.js',
+            'app/js/*.js',
             'test/unit/**/*.js'
         ],
         'exclude' : [
@@ -16,7 +16,9 @@ module.exports = function(config) {
         ],
         'autoWatch': true,
         'frameworks': ['jasmine'],
-        'browsers': ['chrome'],
+        'browsers': ['Chrome'],
+        'reporters': ['dots', 'junit'],
+        'colors': true,
         'plugins': [
             'karma-junit-reporter',
             'karma-chrome-launcher',

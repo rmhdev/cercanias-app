@@ -1,11 +1,21 @@
 'use strict';
 
-var cercaniasApp = angular.module('cercaniasApp', []);
+var cercaniasControllers = angular.module('cercaniasControllers', []);
 
-cercaniasApp.controller('RouteListCtrl', ["$scope", "$http",
+cercaniasControllers.controller('RouteListCtrl', ["$scope", "$http",
     function($scope, $http) {
         $http.get("data/routes.json").success(function(data) {
             $scope.routes = data.routes;
+        });
+    }
+]);
+
+cercaniasControllers.controller('RouteDetailCtrl', ['$scope', '$http', '$routeParams',
+    function($scope, $http, $routeParams) {
+        $http.get("data/route-simple.json").success(function(data) {
+            $scope.name = data.name;
+            $scope.id = data.id;
+            $scope.stations = data.stations;
         });
     }
 ]);

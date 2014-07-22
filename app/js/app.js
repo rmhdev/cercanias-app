@@ -2,3 +2,22 @@
 
 // Declare app level module which depends on filters, and services
 
+var cercaniasApp = angular.module('cercaniasApp', [
+    'ngRoute',
+    'cercaniasControllers'
+]);
+
+cercaniasApp.config([
+    '$routeProvider',
+    function ($routeProvider) {
+        $routeProvider.
+        when('/', {
+            templateUrl: 'partials/route-list.html',
+            controller: 'RouteListCtrl'
+        }).
+        when('/route/:routeId', {
+            templateUrl: 'partials/route-details.html',
+            controller: 'RouteDetailCtrl'
+        });
+    }
+]);

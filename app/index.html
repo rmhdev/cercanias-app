@@ -18,19 +18,7 @@
 </header>
 
 <div class="content">
-
-    <div class="page-header">
-        <h2 class="page-title">Lorem ipsum</h2>
-        <p class="page-description">Lorem ipsum dolor sit amet.</p>
-    </div>
-
-    <div class="card" ng-controller="RouteListCtrl">
-        <ul class="table-view routes">
-            <li class="table-view-cell" ng-repeat="route in routes | filter:query">
-                <a class="navigate-right" href="#/route/{{route.id}}">{{route.name}}</a>
-            </li>
-        </ul>
-    </div>
+    <div ng-view></div>
 </div>
 
 <script src="bower_components/angular/angular.js"></script>

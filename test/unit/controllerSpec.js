@@ -23,11 +23,54 @@ describe('CercaniasApp controllers', function() {
             ctrl = $controller('RouteListCtrl', {$scope: scope});
         }));
 
-        it('should create "routes" model with 3 phones', inject(function() {
+        it('should create "routes" model with 3 routes', inject(function() {
             expect(scope.routes).toBeUndefined();
             $httpBackend.flush();
             expect(scope.routes.length).toBe(3);
         }));
+    });
 
+    describe('RouteDetailCtrl simple', function () {
+        var scope, ctrl, $httpBackend;
+
+        beforeEach(module('cercaniasApp'));
+
+        beforeEach(inject(function(_$httpBackend_, $rootScope, $controller) {
+            $httpBackend = _$httpBackend_;
+            $httpBackend.expectGET('data/route-simple.json').
+                respond({
+                    "id": "20",
+                    "name": "Asturias",
+                    "url": "http://localhost:8888/route/20",
+                    "stations": [
+                        {
+                            "id": "15205",
+                            "name": "Ablaña",
+                            "route_id": "20"
+                        },
+                        {
+                            "id": "16403",
+                            "name": "Aviles",
+                            "route_id": "20"
+                        },
+                        {
+                            "id": "16006",
+                            "name": "Barros",
+                            "route_id": "20"
+                        }
+                    ]
+                });
+
+            scope = $rootScope.$new();
+            ctrl = $controller('RouteDetailCtrl', {$scope: scope});
+        }));
+
+        it('should show the name of the route', inject(function() {
+            expect(scope.routes).toBeUndefined();
+            $httpBackend.flush();
+            expect(scope.name).toBe("Asturias");
+            expect(scope.id).toBe("20");
+            expect(scope.stations.length).toBe(3);
+        }));
     });
 });

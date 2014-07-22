@@ -1,0 +1,222 @@
+{
+    "id": "20",
+    "name": "Asturias",
+    "url": "http://localhost:8888/route/20",
+    "stations": [
+        {
+            "id": "15205",
+            "name": "Ablaña",
+            "route_id": "20"
+        },
+        {
+            "id": "16403",
+            "name": "Aviles",
+            "route_id": "20"
+        },
+        {
+            "id": "16006",
+            "name": "Barros",
+            "route_id": "20"
+        },
+        {
+            "id": "15401",
+            "name": "Calzada Asturias",
+            "route_id": "20"
+        },
+        {
+            "id": "15120",
+            "name": "Campomanes",
+            "route_id": "20"
+        },
+        {
+            "id": "16302",
+            "name": "Cancienes",
+            "route_id": "20"
+        },
+        {
+            "id": "16010",
+            "name": "Ciaño",
+            "route_id": "20"
+        },
+        {
+            "id": "15210",
+            "name": "El Caleyo",
+            "route_id": "20"
+        },
+        {
+            "id": "16011",
+            "name": "El Entrego",
+            "route_id": "20"
+        },
+        {
+            "id": "16301",
+            "name": "Ferroñes",
+            "route_id": "20"
+        },
+        {
+            "id": "15410",
+            "name": "Gijon (Sanz Crespo)",
+            "route_id": "20"
+        },
+        {
+            "id": "15121",
+            "name": "La Cobertoria",
+            "route_id": "20"
+        },
+        {
+            "id": "15217",
+            "name": "La Corredoria",
+            "route_id": "20"
+        },
+        {
+            "id": "16008",
+            "name": "La Felguera",
+            "route_id": "20"
+        },
+        {
+            "id": "15119",
+            "name": "La Frecha",
+            "route_id": "20"
+        },
+        {
+            "id": "15206",
+            "name": "La Pereda-Riosa",
+            "route_id": "20"
+        },
+        {
+            "id": "16402",
+            "name": "La Rocica",
+            "route_id": "20"
+        },
+        {
+            "id": "15209",
+            "name": "Las Segadas",
+            "route_id": "20"
+        },
+        {
+            "id": "15218",
+            "name": "Llamaquique",
+            "route_id": "20"
+        },
+        {
+            "id": "16406",
+            "name": "Los Campos",
+            "route_id": "20"
+        },
+        {
+            "id": "15300",
+            "name": "Lugo de LLanera",
+            "route_id": "20"
+        },
+        {
+            "id": "15212",
+            "name": "Lugones",
+            "route_id": "20"
+        },
+        {
+            "id": "15203",
+            "name": "Mieres-Puente",
+            "route_id": "20"
+        },
+        {
+            "id": "15303",
+            "name": "Monteana",
+            "route_id": "20"
+        },
+        {
+            "id": "16400",
+            "name": "Nubledo",
+            "route_id": "20"
+        },
+        {
+            "id": "15207",
+            "name": "Olloniego",
+            "route_id": "20"
+        },
+        {
+            "id": "15211",
+            "name": "Oviedo",
+            "route_id": "20"
+        },
+        {
+            "id": "16005",
+            "name": "Peña Rubia",
+            "route_id": "20"
+        },
+        {
+            "id": "15122",
+            "name": "Pola de Lena",
+            "route_id": "20"
+        },
+        {
+            "id": "15118",
+            "name": "Puente L.Fierros",
+            "route_id": "20"
+        },
+        {
+            "id": "16009",
+            "name": "Sama",
+            "route_id": "20"
+        },
+        {
+            "id": "16405",
+            "name": "San Juan de Nieva",
+            "route_id": "20"
+        },
+        {
+            "id": "16001",
+            "name": "Santa Eulalia M.",
+            "route_id": "20"
+        },
+        {
+            "id": "15202",
+            "name": "Santullano",
+            "route_id": "20"
+        },
+        {
+            "id": "15302",
+            "name": "Serin",
+            "route_id": "20"
+        },
+        {
+            "id": "15208",
+            "name": "Soto de Rey",
+            "route_id": "20"
+        },
+        {
+            "id": "16002",
+            "name": "Tudela-Veguin",
+            "route_id": "20"
+        },
+        {
+            "id": "15200",
+            "name": "Ujo",
+            "route_id": "20"
+        },
+        {
+            "id": "15400",
+            "name": "Veriña",
+            "route_id": "20"
+        },
+        {
+            "id": "15301",
+            "name": "Villabona Astur",
+            "route_id": "20"
+        },
+        {
+            "id": "15305",
+            "name": "Villabona-Tabladiell",
+            "route_id": "20"
+        },
+        {
+            "id": "16401",
+            "name": "Villalegre",
+            "route_id": "20"
+        },
+        {
+            "id": "15123",
+            "name": "Villallana",
+            "route_id": "20"
+        }
+    ]
+}

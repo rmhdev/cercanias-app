@@ -26,7 +26,9 @@
 
     <div class="card" ng-controller="RouteListCtrl">
         <ul class="table-view routes">
-            <li class="table-view-cell" ng-repeat="route in routes | filter:query">{{ route.name }}</li>
+            <li class="table-view-cell" ng-repeat="route in routes | filter:query">
+                <a class="navigate-right" href="#/route/{{route.id}}">{{route.name}}</a>
+            </li>
         </ul>
     </div>
 </div>

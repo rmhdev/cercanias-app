@@ -15,5 +15,13 @@ describe("Cercanias App", function () {
         it('should have 12 routes', function () {
             expect(element.all(by.css('ul.routes li')).count()).toBe(12);
         });
+
+        it('should render route specific links', function () {
+            expect(element.all(by.css('ul.routes li a')).count()).toBe(12);
+            element.all(by.css('ul.routes li a')).first().click();
+            browser.getLocationAbsUrl().then(function (url) {
+                expect(url.split('#')[1]).toBe('/route/20');
+            });
+        });
     });
 });

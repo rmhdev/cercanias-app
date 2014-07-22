@@ -1,28 +1,43 @@
-<!doctype html>
-<!--[if lt IE 7]>      <html lang="en" ng-app="cercaniasApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html lang="en" ng-app="cercaniasApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html lang="en" ng-app="cercaniasApp" class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en" ng-app="cercaniasApp" class="no-js"> <!--<![endif]-->
+<!DOCTYPE html>
+<html ng-app="cercaniasApp">
 <head>
     <meta charset="utf-8">
     <title>Cercanias APP</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="stylesheet" href="bower_components/ratchet/dist/css/ratchet.min.css">
+    <link rel="stylesheet" href="css/cercanias.css">
+    <script src="bower_components/ratchet/dist/js/ratchet.min.js"></script>
 </head>
 <body>
 
-<header><h1>Cercanias APP</h1></header>
+<header class="bar bar-nav">
+    <h1 class="title">Cercanias APP</h1>
+</header>
 
-    <div ng-controller="RouteListCtrl">
-        <ul class="routes">
-            <li ng-repeat="route in routes | filter:query">{{ route.name }}</li>
-        </ul>
+<div class="content">
+
+    <div class="page-header">
+        <h2 class="page-title">Lorem ipsum</h2>
+        <p class="page-description">Lorem ipsum dolor sit amet.</p>
     </div>
 
-    <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/angular-route/angular-route.js"></script>
-    <script src="js/app.js"></script>
-    <script src="js/services.js"></script>
-    <script src="js/controllers.js"></script>
-    <script src="js/filters.js"></script>
-    <script src="js/directives.js"></script>
+    <div class="card" ng-controller="RouteListCtrl">
+        <ul class="table-view routes">
+            <li class="table-view-cell" ng-repeat="route in routes | filter:query">{{ route.name }}</li>
+        </ul>
+    </div>
+</div>
+
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+<script src="js/app.js"></script>
+<script src="js/services.js"></script>
+<script src="js/controllers.js"></script>
+<script src="js/filters.js"></script>
+<script src="js/directives.js"></script>
+
 </body>
 </html>

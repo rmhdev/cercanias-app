@@ -1,0 +1,39 @@
+header.bar {
+    background-color: #ff1721;
+    color: #ffffff;
+}
+header h1.title {
+    color: #ffffff;
+}
+
+.page-header {
+    position: relative;
+    padding: 25px 15px 35px;
+    overflow: hidden;
+    color: #555555;
+    text-align: center
+}
+
+.page-header .page-description, .page-header .page-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 300
+}
+
+.page-header .page-title {
+    margin-bottom: 5px;
+    font-size: 36px
+}
+
+.page-header .page-description {
+    font-size: 20px;
+    color: #555555;
+    opacity: .7
+}
+
+@media screen and (min-width: 768px) {
+    .page-header {
+        margin-right: 380px;
+        text-align: left
+    }
+}

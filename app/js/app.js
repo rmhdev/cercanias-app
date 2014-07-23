@@ -15,9 +15,9 @@ cercaniasApp.config([
             templateUrl: 'partials/route-list.html',
             controller: 'RouteListCtrl'
         }).
-        when('/route/:routeId', {
-            templateUrl: 'partials/route-details.html',
-            controller: 'RouteDetailCtrl'
+        when('/timetable/:routeId', {
+            templateUrl: 'partials/timetable-from.html',
+            controller: 'TimetableFromCtrl'
         });
     }
 ]);

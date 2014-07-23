@@ -30,14 +30,14 @@ describe('CercaniasApp controllers', function() {
         }));
     });
 
-    describe('RouteDetailCtrl simple', function () {
+    describe('TimetableFromCtrl simple', function () {
         var scope, ctrl, $httpBackend;
 
         beforeEach(module('cercaniasApp'));
 
         beforeEach(inject(function(_$httpBackend_, $rootScope, $controller) {
             $httpBackend = _$httpBackend_;
-            $httpBackend.expectGET('data/route-simple.json').
+            $httpBackend.expectGET('data/route-stations.json').
                 respond({
                     "id": "20",
                     "name": "Asturias",
@@ -62,7 +62,7 @@ describe('CercaniasApp controllers', function() {
                 });
 
             scope = $rootScope.$new();
-            ctrl = $controller('RouteDetailCtrl', {$scope: scope});
+            ctrl = $controller('TimetableFromCtrl', {$scope: scope});
         }));
 
         it('should show the name of the route', inject(function() {

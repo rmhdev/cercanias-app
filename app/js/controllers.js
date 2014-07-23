@@ -10,9 +10,9 @@ cercaniasControllers.controller('RouteListCtrl', ["$scope", "$http",
     }
 ]);
 
-cercaniasControllers.controller('RouteDetailCtrl', ['$scope', '$http', '$routeParams',
+cercaniasControllers.controller('TimetableFromCtrl', ['$scope', '$http', '$routeParams',
     function($scope, $http, $routeParams) {
-        $http.get("data/route-simple.json").success(function(data) {
+        $http.get("data/route-stations.json").success(function(data) {
             $scope.name = data.name;
             $scope.id = data.id;
             $scope.stations = data.stations;

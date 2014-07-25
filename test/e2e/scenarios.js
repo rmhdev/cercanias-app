@@ -20,7 +20,7 @@ describe("Cercanias App", function () {
             expect(element.all(by.css('ul.routes li a')).count()).toBe(12);
             element.all(by.css('ul.routes li a')).first().click();
             browser.getLocationAbsUrl().then(function (url) {
-                expect(url.split('#')[1]).toBe('/route/20');
+                expect(url.split('#')[1]).toBe('/timetable/20');
             });
         });
     });

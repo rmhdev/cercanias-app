@@ -24,4 +24,8 @@ describe("Cercanias App", function () {
             });
         });
     });
+
+    describe('Timetable from', function () {
+
+    });
 });

@@ -4,7 +4,8 @@
 
 var cercaniasApp = angular.module('cercaniasApp', [
     'ngRoute',
-    'cercaniasControllers'
+    'cercaniasControllers',
+    'cercaniasServices'
 ]);
 
 cercaniasApp.config([

@@ -3,10 +3,10 @@
 /* Services */
 var cercaniasServices = angular.module('cercaniasServices', ['ngResource']);
 
-cercaniasServices.factory('CercaniasAPI', ['$resource',
+cercaniasServices.factory('RoutesAPI', ['$resource',
     function ($resource) {
         return $resource('data/route-:routeId.json', {}, {
-            query: { method: 'GET', params: {routeId: 'list'} }
+            query: { method: 'GET', params: {routeId: 'list'}, cache: true }
         });
     }
 ]);

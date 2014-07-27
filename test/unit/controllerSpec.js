@@ -10,7 +10,7 @@ describe('CercaniasApp controllers', function() {
 
         beforeEach(inject(function(_$httpBackend_, $rootScope, $controller) {
             $httpBackend = _$httpBackend_;
-            $httpBackend.expectGET('data/routes.json').
+            $httpBackend.expectGET('data/route-list.json').
                 respond({
                     "routes": [
                         {id: 1, name: 'Route A'},
@@ -35,9 +35,9 @@ describe('CercaniasApp controllers', function() {
 
         beforeEach(module('cercaniasApp'));
 
-        beforeEach(inject(function(_$httpBackend_, $rootScope, $controller) {
+        beforeEach(inject(function(_$httpBackend_, $rootScope, $routeParams, $controller) {
             $httpBackend = _$httpBackend_;
-            $httpBackend.expectGET('data/route-stations.json').
+            $httpBackend.expectGET('data/route-20.json').
                 respond({
                     "id": "20",
                     "name": "Asturias",
@@ -61,6 +61,7 @@ describe('CercaniasApp controllers', function() {
                     ]
                 });
 
+            $routeParams.routeId = "20";
             scope = $rootScope.$new();
             ctrl = $controller('TimetableFromCtrl', {$scope: scope});
         }));

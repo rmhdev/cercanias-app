@@ -6,6 +6,7 @@ module.exports = function(config) {
         'files': [
             'app/bower_components/angular/angular.js',
             'app/bower_components/angular-route/angular-route.js',
+            'app/bower_components/angular-resource/angular-resource.js',
             'app/bower_components/angular-mocks/angular-mocks.js',
             'app/js/*.js',
             'test/unit/**/*.js'
@@ -20,15 +21,9 @@ module.exports = function(config) {
         'reporters': ['progress', 'junit'],
         'colors': true,
         'plugins': [
-            'karma-junit-reporter',
+            //'karma-junit-reporter',
             'karma-chrome-launcher',
-            'karma-firefox-launcher',
-            'karma-script-launcher',
             'karma-jasmine'
-        ],
-        'junitReporter': {
-            outputFile: 'test_out/unit.xml',
-            suite: 'unit'
-        }
+        ]
     });
 };

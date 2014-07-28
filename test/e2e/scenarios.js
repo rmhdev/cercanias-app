@@ -1,9 +1,10 @@
 'use strict';
 
 describe("Cercanias App", function () {
-    browser.get('index.html');
 
     describe('Homepage', function () {
+        browser.get('index.html');
+
         it('should have a title', function () {
             expect(browser.getTitle()).toEqual('Cercanias APP');
         });
@@ -26,6 +27,21 @@ describe("Cercanias App", function () {
     });
 
     describe('Timetable from', function () {
+        beforeEach(function() {
+            browser.get('index.html#/timetable/20');
+        });
+
+        it('should have 43 stations', function() {
+            expect(element.all(by.css('ul.stations li')).count()).toBe(43);
+        });
+
+        it('should render stations with related links', function () {
+            expect(element.all(by.css('ul.stations li a')).count()).toBe(43);
+            element.all(by.css('ul.stations a')).first().click();
+            browser.getLocationAbsUrl().then(function (url) {
+                expect(url.split('#')[1]).toBe('/timetable/20/15205');
+            });
+        });
 
     });
 });

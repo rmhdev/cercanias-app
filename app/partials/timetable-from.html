@@ -5,7 +5,7 @@
 <div class="card">
     <ul class="table-view stations">
         <li class="table-view-cell" ng-repeat="station in stations">
-            {{station.name}}
+            <a class="navigate-right" href="#/timetable/{{station.route_id}}/{{station.id}}">{{station.name}}</a>
         </li>
     </ul>
 </div>

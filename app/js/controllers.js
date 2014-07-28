@@ -19,3 +19,9 @@ cercaniasControllers.controller('TimetableFromCtrl', ['$scope', '$routeParams', 
         });
     }
 ]);
+
+cercaniasControllers.controller('TimetableToCtrl', ['$scope', '$routeParams', 'RoutesAPI'],
+    function ($scope, $routeParams, RoutesAPI) {
+
+    }
+);

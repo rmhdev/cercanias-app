@@ -19,6 +19,11 @@ cercaniasApp.config([
         when('/timetable/:routeId', {
             templateUrl: 'partials/timetable-from.html',
             controller: 'TimetableFromCtrl'
-        });
+        }).
+        when('/timetable/:routeId/:fromStationId', {
+            templateUrl: 'partials/timetable-to.html',
+            controller: 'TimetableToCtrl'
+        })
+        ;
     }
 ]);

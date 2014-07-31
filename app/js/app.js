@@ -20,7 +20,7 @@ cercaniasApp.config([
             templateUrl: 'partials/timetable-from.html',
             controller: 'TimetableFromCtrl'
         }).
-        when('/timetable/:routeId/:fromStationId', {
+        when('/timetable/:routeId/:fromId', {
             templateUrl: 'partials/timetable-to.html',
             controller: 'TimetableToCtrl'
         })

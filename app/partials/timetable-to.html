@@ -1,1 +1,26 @@
-to
+<header class="bar bar-nav">
+    <h1 class="title">{{ name }}</h1>
+</header>
+
+<nav class="bar bar-header-secondary">
+    <div class="segmented-control">
+        <a class="control-item" href="#/timetable/{{from.route_id}}">Departure</a>
+        <a class="control-item active">Destination</a>
+        <a class="control-item">Date</a>
+    </div>
+</nav>
+
+<div class="content">
+    <div class="page-header">
+        <h2 class="page-title">Destination</h2>
+        <p class="page-description">From <strong>{{ from.name }}</strong></p>
+    </div>
+
+    <div class="card">
+        <ul class="table-view stations">
+            <li class="table-view-cell" ng-repeat="station in stations">
+                <a class="navigate-right" href="#/timetable/{{station.route_id}}/{{from.id}}/{{station.id}}">{{station.name}}</a>
+            </li>
+        </ul>
+    </div>
+</div>

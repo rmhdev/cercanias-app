@@ -1,11 +1,23 @@
-<div class="page-header">
-    <h2 class="page-title">{{name}}</h2>
-</div>
+<header class="bar bar-nav">
+    <h1 class="title">{{name}}</h1>
+</header>
+<nav class="bar bar-header-secondary">
+    <div class="segmented-control">
+        <span class="control-item active">Departure</span>
+        <span class="control-item">Destination</span>
+        <span class="control-item">Date</span>
+    </div>
+</nav>
+<div class="content">
+    <div class="page-header">
+        <h2 class="page-title">Departure</h2>
+    </div>
 
-<div class="card">
-    <ul class="table-view stations">
-        <li class="table-view-cell" ng-repeat="station in stations">
-            <a class="navigate-right" href="#/timetable/{{station.route_id}}/{{station.id}}">{{station.name}}</a>
-        </li>
-    </ul>
+    <div class="card">
+        <ul class="table-view stations">
+            <li class="table-view-cell" ng-repeat="station in stations">
+                <a class="navigate-right" href="#/timetable/{{station.route_id}}/{{station.id}}">{{station.name}}</a>
+            </li>
+        </ul>
+    </div>
 </div>

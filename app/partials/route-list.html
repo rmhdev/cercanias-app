@@ -1,12 +1,17 @@
-<div class="page-header">
-    <h2 class="page-title">Lorem ipsum</h2>
-    <p class="page-description">Lorem ipsum dolor sit amet.</p>
-</div>
+<header class="bar bar-nav">
+    <h1 class="title">Cercanias APP</h1>
+</header>
 
-<div class="card">
-    <ul class="table-view routes">
-        <li class="table-view-cell" ng-repeat="route in routes">
-            <a class="navigate-right" href="#/timetable/{{route.id}}">{{route.name}}</a>
-        </li>
-    </ul>
+<div class="content">
+    <div class="page-header">
+        <h2 class="page-title">Choose your route</h2>
+    </div>
+
+    <div class="card">
+        <ul class="table-view routes">
+            <li class="table-view-cell" ng-repeat="route in routes">
+                <a class="navigate-right" href="#/timetable/{{route.id}}">{{route.name}}</a>
+            </li>
+        </ul>
+    </div>
 </div>

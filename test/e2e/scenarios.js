@@ -31,6 +31,18 @@ describe("Cercanias App", function () {
             browser.get('index.html#/timetable/20');
         });
 
+        it('the title should be the route name', function () {
+            expect(element(by.css('header h1')).getText()).toEqual('Asturias');
+        });
+
+        it('secondary bar should not have links', function () {
+            expect(element.all(by.css('.bar-header-secondary a')).count()).toBe(0);
+        });
+
+        //it('secondary bar should have active first tab', function () {
+        //    expect(element.all(by.css('.bar-header-secondary .control-item')).first()).toBe(0);
+        //});
+
         it('should have 43 stations', function() {
             expect(element.all(by.css('ul.stations li')).count()).toBe(43);
         });
